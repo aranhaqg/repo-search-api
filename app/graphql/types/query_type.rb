@@ -8,12 +8,12 @@ module Types
     # They will be entry points for queries on your schema.
 
     # TODO: remove me
-    field :search_repositories, String, null: false do
+    field :search_repositories, [RepositoryType], null: false do
       argument :query, String, required: false
     end
 
     def search_repositories(query: nil)
-      "Hello World!"
+      SearchRepositoryService.call("repo:aranhaqg/aranhaqg")
     end
   end
 end
