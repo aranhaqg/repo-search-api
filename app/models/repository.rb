@@ -8,5 +8,4 @@ class Repository
     @description = description
     @url = @url
   end
-  
 end
