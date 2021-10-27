@@ -8,9 +8,11 @@ module Types
     # They will be entry points for queries on your schema.
 
     # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
+    field :search_repositories, String, null: false do
+      argument :query, String, required: false
+    end
+
+    def search_repositories(query: nil)
       "Hello World!"
     end
   end
