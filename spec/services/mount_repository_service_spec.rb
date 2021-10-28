@@ -3,17 +3,16 @@
 require 'rails_helper'
 
 RSpec.describe MountRepositoryService, type: :service do
-  let(:item_response) do
-    {
-      'id': 1,
-      'name': 'aranhaqg',
-      'full_name': 'aranhaqg/aranhaqg',
-      'description': 'Here you can find all about me!',
-      'url': 'https://api.github.com/repos/aranhaqg/aranhaqg'
-    }
-  end
-
   describe '#call' do
+    let(:item_response) do
+      {
+        'id': 1,
+        'name': 'aranhaqg',
+        'full_name': 'aranhaqg/aranhaqg',
+        'description': 'Here you can find all about me!',
+        'url': 'https://api.github.com/repos/aranhaqg/aranhaqg'
+      }
+    end
     let(:mounted_repository) { described_class.call( item_response ) }
 
     it { expect(item_response['name']).to eq(mounted_repository.name) }

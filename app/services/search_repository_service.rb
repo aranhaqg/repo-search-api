@@ -5,33 +5,24 @@ class SearchRepositoryService < ApplicationService
   def initialize(query)
     @query = query
   end
-  
+
   def call
     response = self.class.get("https://api.github.com/search/repositories?q=#{@query}")
-    
-    process_response(response.parsed_response)
 
+    process_response(response.parsed_response)
   end
 
+  private
+
   def process_response(response)
-    items = response["items"]
+    items = response['items']
     repo_list = []
+
     items.each do |item|
-      repository = mount_repository(item)
+      repository = MountRepositoryService.call(item)
       repo_list << repository
     end
 
     repo_list
-  end
-
-  def mount_repository(item)
-    repository = Repository.new
-    repository.id = item["id"]
-    repository.name = item["name"]
-    repository.full_name = item["full_name"]
-    repository.description = item["description"]
-    repository.url = item["url"]
-
-    repository
   end
 end
