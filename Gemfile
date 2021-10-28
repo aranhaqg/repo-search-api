@@ -31,10 +31,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'graphiql-rails'
 gem 'graphql'
 gem 'httparty'
+gem "rspec-rails", group: [:development, :test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rubocop'
 end
 
 group :development do
