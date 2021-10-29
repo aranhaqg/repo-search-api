@@ -1,10 +1,10 @@
-# Contentful Recipes Graphql API
+# Repository Search GraphQl
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop-hq/rubocop) 
 [![Build Status](https://app.travis-ci.com/aranhaqg/repo-search-api.svg?branch=main)](https://app.travis-ci.com/aranhaqg/repo-search-api) 
 <!-- [![SourceLevel](https://app.sourcelevel.io/github/aranhaqg/-/contentful-recipes.svg)](https://app.sourcelevel.io/github/aranhaqg/-/contentful-recipes)  -->
 <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/0f46ce2dd832c2015eb5/maintainability)](https://codeclimate.com/github/aranhaqg/contentful-recipes/maintainability) -->
 
-This is a GraphQL API that searches Github API repositories.
+This is a GraphQL API that searches Github API repositories by a provided query. To understand how to build the query read the [Github API Documentation](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)
 
 This app uses:
 
@@ -12,7 +12,6 @@ This app uses:
 * Rails 6.1.4
 * GraphQL 1.12.17
 * HTTParty 0.20
-* Docker
 
 For more details check [Gemfile](Gemfile).
 
