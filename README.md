@@ -1,6 +1,17 @@
 # Repository Search GraphQl
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop-hq/rubocop) 
-[![Build Status](https://app.travis-ci.com/aranhaqg/repo-search-api.svg?branch=main)](https://app.travis-ci.com/aranhaqg/repo-search-api) 
+
+<p align="center">
+
+  <p align="left">
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/rspec"></a>
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/ruby_critic"></a>
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/rubocop"></a>
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/brakeman"></a>
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/reek"></a>
+    <a href="https://ruby.ci/aranhaqg/repo-search-api"><img src="https://ruby.ci/badges/558d6f7d-2090-48eb-bf13-9d84448fd2dc/bundler_audit"></a>
+  </p>
+</p>
+
 <!-- [![SourceLevel](https://app.sourcelevel.io/github/aranhaqg/-/contentful-recipes.svg)](https://app.sourcelevel.io/github/aranhaqg/-/contentful-recipes)  -->
 <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/0f46ce2dd832c2015eb5/maintainability)](https://codeclimate.com/github/aranhaqg/contentful-recipes/maintainability) -->
 
