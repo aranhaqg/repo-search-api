@@ -13,7 +13,7 @@ module Types
     end
 
     def search_repositories(query: nil)
-      SearchRepositoryService.call("repo:aranhaqg/aranhaqg")
+      SearchRepositoryService.call(query)
     end
   end
 end
