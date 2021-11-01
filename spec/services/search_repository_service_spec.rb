@@ -7,18 +7,18 @@ RSpec.describe SearchRepositoryService, type: :service do
     let(:query) { 'repo:aranhaqg/aranhaqg' }
     let(:item_response) do
       {
-        'id': 1,
-        'name': 'aranhaqg',
-        'full_name': 'aranhaqg/aranhaqg',
-        'description': 'Here you can find all about me!',
-        'url': 'https://api.github.com/repos/aranhaqg/aranhaqg'
+        id: 1,
+        name: 'aranhaqg',
+        full_name: 'aranhaqg/aranhaqg',
+        description: 'Here you can find all about me!',
+        url: 'https://api.github.com/repos/aranhaqg/aranhaqg'
       }
     end
     let(:github_response) do
       {
-        'total_count': 2,
-        'incomplete_results': false,
-        'items': [item_response, item_response]
+        total_count: 2,
+        incomplete_results: false,
+        items: [item_response, item_response]
       }
     end
 

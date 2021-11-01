@@ -6,14 +6,14 @@ RSpec.describe MountRepositoryService, type: :service do
   describe '#call' do
     let(:item_response) do
       {
-        'id': 1,
-        'name': 'aranhaqg',
-        'full_name': 'aranhaqg/aranhaqg',
-        'description': 'Here you can find all about me!',
-        'url': 'https://api.github.com/repos/aranhaqg/aranhaqg'
+        id: 1,
+        name: 'aranhaqg',
+        full_name: 'aranhaqg/aranhaqg',
+        description: 'Here you can find all about me!',
+        url: 'https://api.github.com/repos/aranhaqg/aranhaqg'
       }
     end
-    let(:mounted_repository) { described_class.call( item_response ) }
+    let(:mounted_repository) { described_class.call(item_response) }
 
     it { expect(item_response['name']).to eq(mounted_repository.name) }
     it { expect(item_response['full_name']).to eq(mounted_repository.full_name) }

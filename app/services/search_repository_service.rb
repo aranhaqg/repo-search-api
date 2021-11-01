@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SearchRepositoryService < ApplicationService
   include HTTParty
   attr_reader :query
