@@ -35,6 +35,19 @@ docker-compose up
 ```
 And then visit localhost:300/graphiql
 
+This is a query example to search for repositories from username aranhaqg:
+````
+{
+  searchRepositories(query: "user:aranhaqg"){
+    id
+    name
+    fullName
+    description 
+    url
+  }
+}
+```
+
 ## Running the tests
 
 ```
