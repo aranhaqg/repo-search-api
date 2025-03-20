@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     branches: ["main"]
 jobs:
-  test:
+  Checks:
     runs-on: ubuntu-latest
     services:
       postgres:
