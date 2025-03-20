@@ -33,7 +33,7 @@ jobs:
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "2.7.2"
+          ruby-version: "3.2.5"
           bundler-cache: true
       - name: Generate binstubs
         run: bundle binstubs bundler-audit brakeman rubocop
