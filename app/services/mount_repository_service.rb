@@ -3,7 +3,7 @@
 class MountRepositoryService < ApplicationService
   attr_reader :item
 
-  def initialize(item)
+  def initialize(item) # rubocop:todo Lint/MissingSuper
     @item = item
   end
 

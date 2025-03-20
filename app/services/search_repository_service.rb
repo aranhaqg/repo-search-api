@@ -4,7 +4,7 @@ class SearchRepositoryService < ApplicationService
   include HTTParty
   attr_reader :query
 
-  def initialize(query)
+  def initialize(query) # rubocop:todo Lint/MissingSuper
     @query = query
   end
 

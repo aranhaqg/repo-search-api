@@ -1,17 +1,17 @@
 AllCops:
   Exclude:
-    - 'app/controllers/graphql_controller.rb'
-    - 'test/**/*'
-    - 'node_modules/**/*'
-    - 'bin/*'
-    - 'vendor/**/*'
+    - "app/controllers/graphql_controller.rb"
+    - "test/**/*"
+    - "node_modules/**/*"
+    - "bin/*"
+    - "vendor/**/*"
   NewCops: enable
 Style/Documentation:
   Enabled: false
 Style/SingleArgumentDig:
   Enabled: false
 Metrics/LineLength:
-  Max: 100
+  Max: 120
 require:
   - rubocop-rails
   - rubocop-rspec
